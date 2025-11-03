@@ -1,0 +1,396 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.App-header {
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.App-header p {
+  margin: 0;
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.tab {
+  padding: 12px 24px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+.tab.active {
+  opacity: 1;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tab:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* Content Area */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Upload Section */
+.upload-section, .url-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.upload-box {
+  border: 3px dashed #667eea;
+  border-radius: 8px;
+  padding: 40px;
+  margin: 20px 0;
+  transition: all 0.3s;
+}
+
+.upload-box:hover {
+  border-color: #764ba2;
+  background: #f8f9ff;
+}
+
+.upload-label {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #667eea;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.upload-label:hover {
+  background: #5568d3;
+}
+
+.help-text {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Divider */
+.divider {
+  text-align: center;
+  margin: 30px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  height: 1px;
+  background: rgba(255,255,255,0.3);
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* URL Section */
+.url-input, .search-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.submit-button, .search-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-button:hover, .search-button:hover {
+  background: #5568d3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Search Section */
+.search-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.search-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  padding: 50px;
+  color: white;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 20px;
+  border: 4px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 300px;
+  height: 20px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: white;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Results Section */
+.results-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.summary {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9ff;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.summary h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  color: #666;
+}
+
+/* Extracted Items Preview */
+.extracted-preview {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.extracted-preview h3 {
+  color: #667eea;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.extracted-preview ul {
+  list-style: none;
+  padding: 0;
+}
+
+.extracted-preview li {
+  padding: 8px 0;
+  color: #666;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.extracted-preview li:last-child {
+  border-bottom: none;
+}
+
+.extracted-preview .author {
+  color: #999;
+  font-style: italic;
+}
+
+.extracted-preview .price {
+  color: #667eea;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.more-items {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Category Results */
+.category-results {
+  margin: 30px 0;
+}
+
+.category-results h3 {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee;
+}
+
+.item-count {
+  font-size: 0.7em;
+  color: #999;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.sample-items {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.retailer-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin: 10px 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.retailer-card:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.retailer-info h4 {
+  margin: 0 0 5px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.retailer-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.score {
+  text-align: center;
+  min-width: 80px;
+}
+
+.score-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.score-label {
+  font-size: 14px;
+  color: #999;
+  display: block;
+}
+
+.new-search-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 14px;
+  font-size: 16px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.new-search-button:hover {
+  background: #5568d3;
+}
+
+/* Footer */
+footer {
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+footer p {
+  margin: 5px 0;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#667eea" />
+    <meta
+      name="description"
+      content="Find ethical shopping alternatives using open data. Skip Amazon and shop better with B Corp certified and sustainable retailers."
+    />
+    <meta
+      name="keywords"
+      content="ethical shopping, amazon alternatives, sustainable shopping, b corp, conscious consumer"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ethical Gift Finder - Shop Better" />
+    <meta
+      property="og:description"
+      content="Find ethical alternatives to Amazon using transparent, open-source data"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Ethical Gift Finder" />
+    <meta
+      property="twitter:description"
+      content="Find ethical alternatives to Amazon using transparent, open-source data"
+    />
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+    <!-- Google Fonts (optional - for better typography) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Ethical Gift Finder - Find Better Places to Shop</title>
+
+    <style>
+      /* Loading screen styles */
+      #root:empty {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #root:empty::before {
+        content: "Loading Ethical Gift Finder...";
+        color: white;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", sans-serif;
+        font-size: 20px;
+        animation: pulse 1.5s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+      }
+
+      /* Better font for the whole app */
+      body {
+        margin: 0;
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      code {
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+          monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 50px; text-align: center; font-family: sans-serif">
+        <h1>JavaScript Required</h1>
+        <p>You need to enable JavaScript to use the Ethical Gift Finder app.</p>
+        <p>
+          This app helps you find ethical alternatives to Amazon using open data
+          from B Corporation, WikiRate, and other transparent sources.
+        </p>
+      </div>
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- 
+      This HTML file is a template.
+      The build process will inject the bundled scripts here.
+      When you run "npm start" in development, React Scripts handles everything.
+    -->
+  </body>
+</html>

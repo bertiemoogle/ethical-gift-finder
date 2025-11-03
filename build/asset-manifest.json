@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ethical-gift-finder/static/css/main.660aeac5.css",
+    "main.js": "/ethical-gift-finder/static/js/main.117ad485.js",
+    "static/js/317.b06628cc.chunk.js": "/ethical-gift-finder/static/js/317.b06628cc.chunk.js",
+    "index.html": "/ethical-gift-finder/index.html",
+    "main.660aeac5.css.map": "/ethical-gift-finder/static/css/main.660aeac5.css.map",
+    "main.117ad485.js.map": "/ethical-gift-finder/static/js/main.117ad485.js.map",
+    "317.b06628cc.chunk.js.map": "/ethical-gift-finder/static/js/317.b06628cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.660aeac5.css",
+    "static/js/main.117ad485.js"
+  ]
+}
